@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="style/style.css" rel="stylesheet">
+	<title>Robert Manez</title>
+</head>
+<body>
+
+<!--navbar-->
+	<nav class="navbar">
+		<a href="#home">Home</a>
+		<a href="#about">About</a>
+		<a href="#projects">Projects</a>
+		<a href="#contact">Contact</a>
+	</nav>
+
+<!--video for background-->
+	<video autoplay muted loop>
+		<source src="style/img/bg.mp4" type="video/mp4">
+	</video>
+
+<!--video text and home section-->
+	<header id="home">
+		<h1>Robert Manez's Portfolio</h1>
+		<p>My name is Robert Manez, and I am a software developer. Welcome, and thanks for coming! Check out my background and experience.</p>
+	</header>
+
+<!--about section-->
+	<section id="about" class="row">
+		<!--left column-->
+		<div class="column2">
+			<img src="style/img/about.jpg" alt="">
+		</div>
+		<!--right column-->
+		<div class="column1">
+			<h2>About</h2>
+			<p>I am a software developer experienced in HTML5, CSS3, and JavaScript.</p>
+			<p>I enjoy the challenges and creative process involved with coding.</p>
+			<p>I value and prioritize self development, life-long learning, and quality time with my wife and kids.</p>
+			<p>If you need a full-stack developer, <a href="#contact">contact me</a> below!</p>
+		</div>
+	</section>
+
+<!--projects section-->
+	<section id="projects" class="row">
+		<!--left column-->
+		<div class="column1">
+			<h2>Projects</h2>
+			<p>Coming soon...</p>
+		</div>
+		<!--right column-->
+		<div class="column2">
+			<img src="style/img/projects.jpg" alt="">
+		</div>
+	</section>
+
+<!--contact section-->
+	<section id="contact" class="row">
+		<!--left column-->
+		<div class="column2">
+			<img src="style/img/contact.jpg" alt="">
+		</div>
+		<!--right column-->
+		<div class="column1">
+			<h2>Contact</h2>
+			<form action="" method="GET">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" placeholder="Type your name here">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" placeholder="Type your email here">
+				<label for="message">Message:</label>
+				<input type="text" id="message" name="message" placeholder="Type your message here">
+				<input type="submit" value="Send">
+			</form>
+		</div>
+	</section>
+
+</body>
+</html>
