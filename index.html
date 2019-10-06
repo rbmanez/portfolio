@@ -1,127 +1,100 @@
 <!DOCTYPE html>
+<html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link href="style/style.css" rel="stylesheet">
-	<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
-	<title>Robert Manez</title>
+    <title>Robert Manez</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
-<body>
+<body> 
 
-<!--navbar-->
-	<nav class="navbar">
-		<a href="#home">Home</a>
-		<a href="#about">About</a>
-		<a href="#projects">Projects</a>
-		<a href="#contact">Contact</a>
-	</nav>
+<!-- Navbar -->
+	<div class="Navbar">
+		<a class="active" href="#Home">Home</a> 
+		<a href="#About">About</a>
+		<a href="#Projects">Projects</a>
+		<a href="#Contact">Contact</a>
+	</div>
 
-<!--video for background-->
-	<video autoplay muted loop>
-		<source src="style/img/bg.mp4" type="video/mp4">
-	</video>
+<!-- Home and Background Video -->
+	<div id="Home">
+		<video autoplay muted loop id="Video"> <!-- Makes the video play automatically, on a loop and with no sound -->
+			<source src="images/bg.mp4" type="video/mp4">
+			Your browser does not support HTML5 video. <!-- Display message if video fails to run -->
+		</video>
+	</div>
 
-<!-- Flexbox container for aligning the toasts 
-<div class="d-flex justify-content-center align-items-center" style="min-height: 150px;">
-	 Then put toasts within 
-	<div class="toast" data-delay="5000">
-		<div class="toast-header">
-			<h3 class="mr-auto">Welcome!</h3>
-			<button type="button" class="ml-2 mb-1 close" data-dismiss="toast">
-				<span aria-hidden="true">&times;</span>
-			</button>
+<!-- Video text --> 
+	<div class="Video_Text">
+		<h1 style="color:white;">Robert Manez</h1>
+		<h2 style="color:white;">Software & Web Developer</h2>
+		<center>
+			<h3>I Create Things with Technology.</h3>
+		</center>
+	</div>
+
+<!-- About section -->
+	<div class="Row" id="About"> 
+		<div class="Column_2"> <!-- Left column -->
+			<img src="images/about.jpg" alt="Laptop">
 		</div>
-		<div class="toast-body">
-			<h5>Thanks for checking out my software developer portfolio!</h4>
+  
+		<div class="Column_1"> <!-- Right column -->
+			<h2>About</h2>
+			<p>Technology is a very powerful tool, and it is everywhere. I decided to learn how to use it. It was an empowering experience, and my curiosity lead to my career.</p>
+			<p>I am trained and experienced with HTML, CSS, JavaScript, SQL, Python, and C#. I would love to work with you on your project. Contact me!</p>
 		</div>
 	</div>
-</div>-->
 
-<!--video text and home section-->
-	<header id="home">
-		<h1>Robert Manez</h1>
-		<h2>Software Developer</h2>
-		<hr>
-		<p>I bring ideas to life through technology.</p>
-		<p>If you need a software developer, contact me below!</p>
-	</header>
-
-<!--about section-->
-	<section id="about" class="row">
-		<!--left column-->
-		<div class="column2">
-			<img src="style/img/about.jpg" alt="">
-		</div>
-		<!--right column-->
-		<div class="column1">
-			<h2>About</h2>
-			<p>Skills: HTML, CSS, JavaScript, and Python.</p>
-			<p>Passions: Life-long learning, self-improvment, and creating things.</p>
-		</div>
-	</section>
-
-<!--projects section-->
-	<section id="projects" class="row">
-		<!--left column-->
-		<div class="column1">
+<!-- Projects section -->
+	<div class="Row" id="Projects">
+		<div class="Column_1"> <!-- Left column -->
 			<h2>Projects</h2>
-			<p>-
-				<a href="https://github.com/rbmanez/tta-js/tree/master/js-pizza-project-solution" target="_blank">
-					Pizza Ordering JavaScript Project
-				</a> 
-			</p>
-			<p>-
-				<a href="https://github.com/rbmanez/tta-html-css-projects/tree/master/academy-cinemas" target="_blank">
-					Cinema Bootstrap Project
-				</a>
-			</p>
-			<p>-
-				<a href="https://github.com/rbmanez/tta-sql-projects" target="_blank">
-					Library Management System SQL Project
-				</a>
-			</p>
-			<p>-
-				<a href="https://github.com/rbmanez/tta-python-projects/tree/master/techproject_django" target="_blank">
-					Hotel Admin Panel Python Django Project
-				</a>
-			</p>
+			<ul>
+				<li>
+					<p><a href="https://github.com/rbmanez/tta-live-projects" target="_blank">Team Live Projects with Python</a></p>
+				</li>
+				<li>
+					<p><a href="https://github.com/rbmanez/tta-js/tree/master/js-pizza-project-solution" target="_blank">Pizza Ordering with JavaScript</a></p>
+				</li>
+				<li>
+					<p><a href="https://github.com/rbmanez/tta-sql-projects" target="_blank">Library Management System with SQL</a></p>
+				</li>
+				<li>
+					<p><a href="https://github.com/rbmanez/tta-python-projects/tree/master/techproject_django" target="_blank">Hotel Admin Panel with Python and Django Framework</a></p>
+				</li>
+				<li>
+					<p><a href="https://github.com/rbmanez/tta-python-projects/tree/master/techproject_django" target="_blank">Car Insurance Quote with C# ASP.NET MVC and Entity Framework</a></p>
+				</li>
+			</ul>
 		</div>
-		<!--right column-->
-		<div class="column2">
-			<img src="style/img/projects.jpg" alt="">
+		
+		<div class="Column_2"> <!-- Right column -->
+			<img src="images/projects.jpg" alt="Paintbrushes">
 		</div>
-	</section>
+	</div>
 
-<!--contact section-->
-	<section id="contact" class="row">
-		<!--left column-->
-		<div class="column2">
-			<img src="style/img/contact.jpg" alt="">
+<!-- Contact section -->
+	<div class="Row" id="Contact"> 
+		<div class="Column_3"> <!-- Contact image, left column -->
+			<img src="images/contact.jpg" alt="Contact_Image">
 		</div>
-		<!--right column-->
-		<div class="column1">
-			<h2>Contact</h2>
-			<form action="" method="GET">
-				<label for="name">Name:</label>
-				<input type="text" id="name" name="name" placeholder="Type your name here">
-				<label for="email">Email:</label>
-				<input type="email" id="email" name="email" placeholder="Type your email here">
-				<label for="message">Message:</label>
-				<input type="text" id="message" name="message" placeholder="Type your message here">
-				<input type="submit" value="Send">
+	
+		<div class="Column_1"> <!-- Contact form, right column -->
+			<h2>Contact</h2> 
+			<form action="" method="get"> <!-- This specifies where to send the form data and how; it is left blank -->
+				<label for="Name">Name:</label>
+				<input type="text" id="Name" placeholder="Please enter your name here">
+				<label for="Email">Email:</label>
+				<input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+				<label for="Message">Message:</label>
+				<input type="text" id="Message" name="Message" placeholder="Please write your message here">
+				<input type="submit" value="Submit">
 			</form>
 		</div>
-	</section>
-
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-	<script>
-		$(".toast").toast("show")
-	</script>
-
+	</div>
+	
 </body>
 </html>
