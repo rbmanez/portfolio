@@ -1,1 +1,3 @@
-# portfolio
+# Portfolio
+[robertmanez.com](http://robertmanez.com/)
+My portfolio was created using a free template. I updated the HTML and CSS to persoanlize it.
