@@ -87,6 +87,17 @@
   }
 }
 
+#profile-picture {
+  border-radius: 10%;
+  filter: grayscale(20%);
+  height: 20rem;
+  width: 18rem;
+}
+
+.project-height {
+  height: 22rem;
+}
+
 .masthead {
   position: relative;
   width: 100%;
@@ -239,6 +250,10 @@
 
 .contact-section .social a:active {
   color: #fff;
+}
+
+.contact-links {
+  font-size: 1.8rem;
 }
 
 body {
