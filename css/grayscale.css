@@ -88,15 +88,20 @@
 }
 
 #profile-picture {
-  border-radius: 10%;
+  border-radius: 50%;
   filter: grayscale(20%);
-  height: 20rem;
-  width: 18rem;
+  width: 15rem;
+  height: auto;
 }
 
-.project-height {
+/*.project-height {
   height: 22rem;
-}
+}*/
+
+/*.x {
+  height: 22rem;
+  overflow: hidden;
+}*/
 
 .masthead {
   position: relative;
